@@ -31,11 +31,13 @@ I build cloud-native services and observability tooling that helps teams underst
 ![](https://streak-stats.demolab.com/?user=Kalsaria-C&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=Kalsaria-C&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
 
-## 🏆 GitHub Trophies
+## 🔝 Top Contributed Work
 
-![](https://github-profile-trophy.vercel.app/?username=Kalsaria-C&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-### 🔝 Top Contributed Repositories
+<p>
+  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=oracle-samples&repo=otel-collector-exporter-oracleobservability&theme=transparent&hide_border=true" alt="Oracle Observability Exporter for OpenTelemetry Collector" />
+  </a>
+</p>
 
 ![](https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
@@ -61,4 +63,4 @@ I build cloud-native services and observability tooling that helps teams underst
 
 ---
 
-[![](https://komarev.com/ghpvc/?username=Kalsaria-C&icon=0&color=0)](https://visitcount.itsvg.in)
+![Profile views](https://komarev.com/ghpvc/?username=Kalsaria-C&label=Profile%20views&color=0B5FFF&style=flat)
