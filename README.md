@@ -24,18 +24,27 @@
 
 ## 💻 Tech Stack
 
+**Languages**
+
 <p>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+</p>
+
+**Backend & Architecture**
+
+<p>
   <img src="https://img.shields.io/badge/Microservices-0F172A?style=for-the-badge" alt="Microservices" />
   <img src="https://img.shields.io/badge/Distributed%20Systems-1D4ED8?style=for-the-badge" alt="Distributed Systems" />
   <img src="https://img.shields.io/badge/REST%20APIs-10B981?style=for-the-badge&logo=swagger&logoColor=white" alt="REST APIs" />
   <img src="https://img.shields.io/badge/Dropwizard-7C3AED?style=for-the-badge" alt="Dropwizard" />
   <img src="https://img.shields.io/badge/Event--Driven%20Architecture-F59E0B?style=for-the-badge" alt="Event-Driven Architecture" />
 </p>
+
+**Cloud, Data & Frameworks**
 
 <p>
   <img src="https://img.shields.io/badge/Oracle%20Cloud%20Infrastructure-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI" />
@@ -48,6 +57,8 @@
   <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring" />
   <img src="https://img.shields.io/badge/Redis-DD0031?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
 </p>
+
+**Testing & Developer Tools**
 
 <p>
   <img src="https://img.shields.io/badge/TestNG-334155?style=for-the-badge" alt="TestNG" />
@@ -67,22 +78,22 @@
 
 ## 📊 GitHub Stats
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kalsaria-C&theme=github_dark)
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kalsaria-C&theme=github_dark" alt="Chintan Kalsaria profile details" />
 
 <p>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kalsaria-C&theme=github_dark" alt="GitHub stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=github_dark" alt="Most commit language" />
-</p>
-
-<p>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Kalsaria-C&theme=github_dark" alt="Top languages by repository" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kalsaria-C&theme=github_dark" alt="GitHub stats" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=github_dark" alt="Most commit language" />
 </p>
 
 ## 🔝 Top Contributed Work
 
-- 🚀 [Oracle Observability Exporter for OpenTelemetry Collector](https://github.com/oracle-samples/otel-collector-exporter-oracleobservability)
+<p>
+  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">Oracle Observability Exporter for OpenTelemetry Collector</a>
+</p>
 
-![](https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<p>
+  <img src="https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top contributed repositories" />
+</p>
 
 ### 👨‍💼 Employer?
 
