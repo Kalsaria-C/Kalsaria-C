@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D9BED1&height=120&section=header" alt="header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0B5FFF&height=120&section=header" alt="header" />
 
 <h2 align="center">Hey there, I'm Chintan 👋</h2>
 
@@ -21,53 +21,36 @@ I build cloud-native services and observability tooling that helps teams underst
 
 ## 💻 Tech Stack
 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![Riot Games](https://img.shields.io/badge/riotgames-D32936.svg?style=for-the-badge&logo=riotgames&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white)
+`Languages:` Java, Go, Python, C++, SQL
+
+`Backend & Architecture:` Microservices, Distributed Systems, REST APIs, Dropwizard, Event-Driven Architecture
+
+`Cloud & Infrastructure:` Oracle Cloud Infrastructure (OCI), Docker, Terraform, Linux
+
+`Databases:` MySQL
+
+`Testing & Developer Tools:` TestNG, Mockito, JaCoCo, Maven, Git, Jira, Grafana
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) ![OCI](https://img.shields.io/badge/OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-5835CC?style=for-the-badge&logo=terraform&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0A0FFF?style=for-the-badge&logo=jira&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
 ## 📊 GitHub Stats
 
 ![](https://github-readme-stats.shion.dev/api?username=Kalsaria-C&theme=dark&hide_border=false&include_all_commits=false&count_private=true)<br/>
 ![](https://streak-stats.demolab.com/?user=Kalsaria-C&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=Kalsaria-C&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=github_dark)
 
 ## 🔝 Top Contributed Work
 
-<p>
-  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=oracle-samples&repo=otel-collector-exporter-oracleobservability&theme=transparent&hide_border=true" alt="Oracle Observability Exporter for OpenTelemetry Collector" />
-  </a>
-</p>
+- 🚀 [Oracle Observability Exporter for OpenTelemetry Collector](https://github.com/oracle-samples/otel-collector-exporter-oracleobservability)
 
 ![](https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
-## 🧩 Featured Work
-
-<p>
-  <a href="https://github.com/Kalsaria-C/opentelemetry-collector-contrib">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kalsaria-C&repo=opentelemetry-collector-contrib&theme=transparent&hide_border=true" alt="OpenTelemetry Collector Contrib" />
-  </a>
-  <a href="https://github.com/Kalsaria-C/opentelemetry-demo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kalsaria-C&repo=opentelemetry-demo&theme=transparent&hide_border=true" alt="OpenTelemetry Demo" />
-  </a>
-</p>
-
-<p>
-  <a href="https://github.com/Kalsaria-C/oci-observability-and-management">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kalsaria-C&repo=oci-observability-and-management&theme=transparent&hide_border=true" alt="OCI Observability and Management" />
-  </a>
-  <a href="https://github.com/Kalsaria-C/sprints-structure-generator-script">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kalsaria-C&repo=sprints-structure-generator-script&theme=transparent&hide_border=true" alt="Sprint Structure Generator" />
-  </a>
-</p>
 
 ---
 
 ![Profile views](https://komarev.com/ghpvc/?username=Kalsaria-C&label=Profile%20views&color=0B5FFF&style=flat)
 
-### 👨‍💼 Employer
+<p align="center">
+  <a href="https://github.com/Kalsaria-C/Kalsaria-C/raw/main/Chintan_CV_020726.pdf" download>📄 Download my resume</a>
+</p>
 
-> [!IMPORTANT]
-> Oracle
-
-<a href="https://github.com/Kalsaria-C/Kalsaria-C/raw/main/Chintan_CV_020726.pdf" download>📄 Download my resume</a>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D9BED1&height=120&section=footer" alt="footer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0B5FFF&height=120&section=footer" alt="footer" />
