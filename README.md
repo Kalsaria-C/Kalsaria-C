@@ -78,17 +78,26 @@
 
 ## 📊 GitHub Stats
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kalsaria-C&theme=github_dark" alt="Chintan Kalsaria profile details" />
-
-<p>
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kalsaria-C&theme=github_dark" alt="GitHub stats" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=github_dark" alt="Most commit language" />
-</p>
+<table>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kalsaria-C&theme=tokyonight" alt="Chintan Kalsaria profile details" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kalsaria-C&theme=tokyonight" alt="GitHub stats" />
+    </td>
+    <td width="50%" valign="top">
+      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=tokyonight" alt="Most commit language" />
+    </td>
+  </tr>
+</table>
 
 ## 🔝 Top Contributed Work
 
 <p>
-  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">🚀 Oracle Observability Exporter for OpenTelemetry Collector</a>
+  🚀 <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">Oracle Observability Exporter for OpenTelemetry Collector</a>
 </p>
 
 ### 👨‍💼 Employer?
