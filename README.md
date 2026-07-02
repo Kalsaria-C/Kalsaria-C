@@ -1,16 +1,27 @@
-## Hi there 👋
+# Chintan Kalsaria
 
-<!--
-**Kalsaria-C/Kalsaria-C** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Cloud observability engineer at Oracle | OpenTelemetry | OCI**
 
-Here are some ideas to get you started:
+I build cloud-native services and observability tooling that make distributed systems easier to understand, operate, and improve.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Focus
+
+- Telemetry pipelines and OpenTelemetry Collector integrations
+- Cloud observability and monitoring on Oracle Cloud Infrastructure
+- Reliable backend services and developer tooling
+
+## Technologies
+
+`Go` `Java` `Python` `OpenTelemetry` `Oracle Cloud Infrastructure` `HCL` `TypeScript`
+
+## Open Source and Projects
+
+- [Oracle Observability Exporter for OpenTelemetry Collector](https://github.com/oracle-samples/otel-collector-exporter-oracleobservability)
+- [OpenTelemetry Collector Contrib](https://github.com/Kalsaria-C/opentelemetry-collector-contrib)
+- [OpenTelemetry Demo](https://github.com/Kalsaria-C/opentelemetry-demo)
+- [OCI Observability and Management](https://github.com/Kalsaria-C/oci-observability-and-management)
+
+## Connect
+
+- [LinkedIn](https://www.linkedin.com/in/chintan-kalsaria)
+- [GitHub](https://github.com/Kalsaria-C)
