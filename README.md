@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0B5FFF&height=170&section=header&text=Chintan%20Kalsaria&fontSize=46&fontColor=FFFFFF&fontAlignY=45&desc=Cloud%20Observability%20Engineer&descAlignY=67&descSize=19" alt="Chintan Kalsaria" />
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D9BED1&height=120&section=header" alt="header" />
 
 <h2 align="center">Hey there, I'm Chintan 👋</h2>
 
@@ -64,3 +62,10 @@ I build cloud-native services and observability tooling that helps teams underst
 ---
 
 ![Profile views](https://komarev.com/ghpvc/?username=Kalsaria-C&label=Profile%20views&color=0B5FFF&style=flat)
+
+### 👨‍💼 Employer
+
+> [!IMPORTANT]
+> Oracle
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=D9BED1&height=120&section=footer" alt="footer" />
