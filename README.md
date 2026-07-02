@@ -88,11 +88,7 @@
 ## 🔝 Top Contributed Work
 
 <p>
-  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">Oracle Observability Exporter for OpenTelemetry Collector</a>
-</p>
-
-<p>
-  <img src="https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true" alt="Top contributed repositories" />
+  <a href="https://github.com/oracle-samples/otel-collector-exporter-oracleobservability">🚀 Oracle Observability Exporter for OpenTelemetry Collector</a>
 </p>
 
 ### 👨‍💼 Employer?
