@@ -8,29 +8,36 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=0B5FFF&center=true&vCenter=true&width=720&lines=Building+reliable+observability+systems+%F0%9F%9A%80;OpenTelemetry+%7C+OCI+%7C+Distributed+Systems;Go+%7C+Java+%7C+Python" alt="Profile introduction" />
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/chintan-kalsaria">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-</p>
-
-## 🚀 What I Build
+## 👋 About Me
 
 I build cloud-native services and observability tooling that helps teams understand, operate, and improve distributed systems.
 
 - 🔭 Telemetry pipelines and OpenTelemetry Collector integrations
 - 📊 Cloud observability on Oracle Cloud Infrastructure
 - 🛠️ Reliable backend services and practical developer tooling
+- 📍 Based in Bengaluru, India
 
-## 🧰 Toolbox
+## 🌐 Socials
 
-<p>
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/OpenTelemetry-1A1F71?style=for-the-badge&logo=opentelemetry&logoColor=white" alt="OpenTelemetry" />
-  <img src="https://img.shields.io/badge/Oracle%20Cloud%20Infrastructure-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle Cloud Infrastructure" />
-</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/chintan-kalsaria) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:chintan.kalsaria@gmail.com)
+
+## 💻 Tech Stack
+
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white) ![Riot Games](https://img.shields.io/badge/riotgames-D32936.svg?style=for-the-badge&logo=riotgames&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white)
+
+## 📊 GitHub Stats
+
+![](https://github-readme-stats.shion.dev/api?username=Kalsaria-C&theme=dark&hide_border=false&include_all_commits=false&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=Kalsaria-C&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=Kalsaria-C&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+
+## 🏆 GitHub Trophies
+
+![](https://github-profile-trophy.vercel.app/?username=Kalsaria-C&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+
+### 🔝 Top Contributed Repositories
+
+![](https://github-contributor-stats.vercel.app/api?username=Kalsaria-C&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ## 🧩 Featured Work
 
@@ -52,16 +59,6 @@ I build cloud-native services and observability tooling that helps teams underst
   </a>
 </p>
 
-## 📊 GitHub Snapshot
+---
 
-<p>
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Kalsaria-C&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="GitHub statistics" />
-</p>
-
-## 💡 What I Value
-
-`Useful telemetry` · `Reliable systems` · `Simple developer tooling`
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/chintan-kalsaria">Let's connect 🤝</a>
-</p>
+[![](https://komarev.com/ghpvc/?username=Kalsaria-C&icon=0&color=0)](https://visitcount.itsvg.in)
