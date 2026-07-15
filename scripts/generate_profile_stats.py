@@ -97,6 +97,32 @@ def wrap_lines(text: str, width: int) -> list[str]:
     return textwrap.wrap(text, width=width, break_long_words=False, break_on_hyphens=False)
 
 
+def truncate_text(text: str, max_len: int) -> str:
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 1].rstrip() + "…"
+
+
+def render_text_lines(
+    x: int,
+    y: int,
+    lines: list[str],
+    font_size: int,
+    line_height: int,
+    color: str,
+    *,
+    weight: str = "400",
+    anchor: str = "start",
+) -> str:
+    parts = []
+    for idx, line in enumerate(lines):
+        parts.append(
+            f'<text x="{x}" y="{y + idx * line_height}" text-anchor="{anchor}" fill="{color}" '
+            f'font-size="{font_size}" font-weight="{weight}">{escape(line)}</text>'
+        )
+    return "".join(parts)
+
+
 def month_label(month: int) -> str:
     return dt.date(CURRENT_YEAR, month, 1).strftime("%b")
 
@@ -191,19 +217,25 @@ def render_svg(width: int, height: int, body: str) -> str:
         + f'<linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="{COLORS["accent"]}"/><stop offset="100%" stop-color="{COLORS["accent_soft"]}"/></linearGradient>'
         + f'<linearGradient id="chip" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#12233d"/><stop offset="100%" stop-color="#111827"/></linearGradient>'
         + "</defs>"
+        + (
+            "<style>"
+            "text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;"
+            "letter-spacing:0}"
+            "</style>"
+        )
         + body
         + "</svg>\n"
     )
 
 
 def render_overview_card(user: dict[str, Any], contribution_count: int, contribution_days: list[tuple[dt.date, int]], avatar_data_uri: str) -> str:
-    width, height = 1200, 360
+    width, height = 1200, 390
     start = dt.date(CURRENT_YEAR, 1, 1)
     calendar_start = start - dt.timedelta(days=(start.weekday() + 1) % 7)
-    heat_x = 730
-    heat_y = 86
-    cell = 12
-    gap = 4
+    heat_x = 520
+    heat_y = 128
+    cell = 9
+    gap = 3
     heat_colors = {
         0: COLORS["heat_0"],
         1: COLORS["heat_1"],
@@ -228,7 +260,7 @@ def render_overview_card(user: dict[str, Any], contribution_count: int, contribu
         week = (month_start - calendar_start).days // 7
         x = heat_x + week * (cell + gap)
         month_labels.append(
-            f'<text x="{x}" y="{heat_y - 16}" fill="{COLORS["muted"]}" font-size="12">{month_label(month)}</text>'
+            f'<text x="{x}" y="{heat_y - 14}" fill="{COLORS["muted"]}" font-size="12" font-weight="600">{month_label(month)}</text>'
         )
 
     overview_items = [
@@ -240,94 +272,101 @@ def render_overview_card(user: dict[str, Any], contribution_count: int, contribu
 
     chips = ["Go", "Java", "OCI", "Distributed Systems"]
     chip_svg = []
-    chip_x = 220
+    chip_x = 190
+    chip_y = 214
     for chip in chips:
         chip_width = 24 + len(chip) * 9
         chip_svg.append(
-            f'<g transform="translate({chip_x},182)"><rect width="{chip_width}" height="34" rx="17" fill="url(#chip)" stroke="{COLORS["border"]}"/><text x="{chip_width / 2}" y="22" text-anchor="middle" fill="{COLORS["text"]}" font-size="15" font-weight="600">{escape(chip)}</text></g>'
+            f'<g transform="translate({chip_x},{chip_y})"><rect width="{chip_width}" height="34" rx="17" fill="url(#chip)" stroke="{COLORS["border"]}"/><text x="{chip_width / 2}" y="22" text-anchor="middle" fill="{COLORS["text"]}" font-size="15" font-weight="600">{escape(chip)}</text></g>'
         )
         chip_x += chip_width + 12
 
     stat_svg = []
-    stat_x = 220
+    stat_x = 190
     for label, value in overview_items:
         stat_svg.append(
-            f'<text x="{stat_x}" y="260" fill="{COLORS["muted"]}" font-size="14">{escape(label)}</text>'
-            f'<text x="{stat_x}" y="288" fill="{COLORS["text"]}" font-size="22" font-weight="700">{escape(value)}</text>'
+            f'<text x="{stat_x}" y="314" fill="{COLORS["muted"]}" font-size="14">{escape(label)}</text>'
+            f'<text x="{stat_x}" y="344" fill="{COLORS["text"]}" font-size="22" font-weight="700">{escape(value)}</text>'
         )
         stat_x += 120 if label == "Followers" else 170
 
-    bio_lines = wrap_lines("Backend engineer building reliable observability and ingestion systems with Go, Java, and OCI.", 46)
-    bio_svg = []
-    for idx, line in enumerate(bio_lines):
-        bio_svg.append(
-            f'<text x="220" y="{142 + idx * 24}" fill="{COLORS["muted"]}" font-size="18">{escape(line)}</text>'
-        )
+    bio_lines = wrap_lines(
+        "Backend engineer building reliable observability and ingestion systems with Go, Java, and OCI.",
+        34,
+    )
+    bio_svg = render_text_lines(
+        190,
+        146,
+        bio_lines,
+        18,
+        28,
+        COLORS["muted"],
+        weight="500",
+    )
 
     body = f"""
 <rect width="{width}" height="{height}" rx="28" fill="{COLORS["bg"]}" />
 <rect x="1.5" y="1.5" width="{width - 3}" height="{height - 3}" rx="26.5" stroke="url(#frame)" stroke-opacity="0.85" stroke-width="3" />
 <rect x="26" y="26" width="{width - 52}" height="{height - 52}" rx="24" fill="{COLORS["panel"]}" stroke="{COLORS["border"]}" />
-<circle cx="130" cy="118" r="62" fill="{COLORS["bg"]}" stroke="{COLORS["accent"]}" stroke-width="4" />
-<image href="{avatar_data_uri}" x="68" y="56" width="124" height="124" clip-path="inset(0 round 62px)" />
-<text x="220" y="86" fill="{COLORS["title"]}" font-size="38" font-weight="700">{escape(user["name"] or USER)}</text>
-<text x="220" y="116" fill="{COLORS["text"]}" font-size="18">@{escape(USER)} • Bengaluru, India</text>
-{''.join(bio_svg)}
+<circle cx="118" cy="118" r="62" fill="{COLORS["bg"]}" stroke="{COLORS["accent"]}" stroke-width="4" />
+<image href="{avatar_data_uri}" x="56" y="56" width="124" height="124" clip-path="inset(0 round 62px)" />
+<text x="190" y="86" fill="{COLORS["title"]}" font-size="32" font-weight="700">{escape(user["name"] or USER)}</text>
+<text x="190" y="118" fill="{COLORS["text"]}" font-size="18" font-weight="600">@{escape(USER)} • Bengaluru, India</text>
+{bio_svg}
 {''.join(chip_svg)}
 {''.join(stat_svg)}
-<text x="{heat_x}" y="44" fill="{COLORS["title"]}" font-size="24" font-weight="700">Contribution Heatmap</text>
-<text x="{heat_x}" y="66" fill="{COLORS["muted"]}" font-size="14">Public GitHub activity in {CURRENT_YEAR}</text>
+<text x="{heat_x}" y="64" fill="{COLORS["title"]}" font-size="24" font-weight="700">Contribution Heatmap</text>
+<text x="{heat_x}" y="88" fill="{COLORS["muted"]}" font-size="14">Public GitHub activity in {CURRENT_YEAR}</text>
 {''.join(month_labels)}
 {''.join(heatmap_cells)}
-<text x="{heat_x}" y="318" fill="{COLORS["muted"]}" font-size="12">Less</text>
-<rect x="{heat_x + 38}" y="306" width="12" height="12" rx="3" fill="{COLORS["heat_0"]}" />
-<rect x="{heat_x + 56}" y="306" width="12" height="12" rx="3" fill="{COLORS["heat_1"]}" />
-<rect x="{heat_x + 74}" y="306" width="12" height="12" rx="3" fill="{COLORS["heat_2"]}" />
-<rect x="{heat_x + 92}" y="306" width="12" height="12" rx="3" fill="{COLORS["heat_3"]}" />
-<rect x="{heat_x + 110}" y="306" width="12" height="12" rx="3" fill="{COLORS["heat_4"]}" />
-<text x="{heat_x + 130}" y="318" fill="{COLORS["muted"]}" font-size="12">More</text>
+<text x="{heat_x}" y="344" fill="{COLORS["muted"]}" font-size="12">Less</text>
+<rect x="{heat_x + 38}" y="332" width="12" height="12" rx="3" fill="{COLORS["heat_0"]}" />
+<rect x="{heat_x + 56}" y="332" width="12" height="12" rx="3" fill="{COLORS["heat_1"]}" />
+<rect x="{heat_x + 74}" y="332" width="12" height="12" rx="3" fill="{COLORS["heat_2"]}" />
+<rect x="{heat_x + 92}" y="332" width="12" height="12" rx="3" fill="{COLORS["heat_3"]}" />
+<rect x="{heat_x + 110}" y="332" width="12" height="12" rx="3" fill="{COLORS["heat_4"]}" />
+<text x="{heat_x + 130}" y="344" fill="{COLORS["muted"]}" font-size="12">More</text>
 """
     return render_svg(width, height, body)
 
 
 def render_stats_card(user: dict[str, Any], repos: list[dict[str, Any]], contribution_count: int) -> str:
-    width, height = 590, 300
+    width, height = 590, 320
     total_stars = sum(repo.get("stargazers_count", 0) for repo in repos)
     total_forks = sum(repo.get("forks_count", 0) for repo in repos)
     latest_repo = max(repos, key=lambda repo: repo.get("pushed_at") or "")
     latest_repo_name = latest_repo["name"]
     latest_repo_date = dt.datetime.fromisoformat(latest_repo["pushed_at"].replace("Z", "+00:00")).strftime("%d %b %Y")
+    latest_repo_lines = wrap_lines(truncate_text(latest_repo_name, 42), 24)
 
-    rows = [
-        ("Contributions", f"{fmt_number(contribution_count)} in {CURRENT_YEAR}"),
-        ("Public repositories", fmt_number(user["public_repos"])),
-        ("Followers / Following", f'{fmt_number(user["followers"])} / {fmt_number(user["following"])}'),
-        ("Total stars / Forks", f"{fmt_number(total_stars)} / {fmt_number(total_forks)}"),
-        ("Latest active repo", latest_repo_name),
-        ("Last public push", latest_repo_date),
+    row_svg = [
+        f'<text x="36" y="120" fill="{COLORS["muted"]}" font-size="15">Contributions</text>'
+        f'<text x="554" y="120" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{fmt_number(contribution_count)} in {CURRENT_YEAR}</text>',
+        f'<text x="36" y="156" fill="{COLORS["muted"]}" font-size="15">Public repositories</text>'
+        f'<text x="554" y="156" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{fmt_number(user["public_repos"])}</text>',
+        f'<text x="36" y="192" fill="{COLORS["muted"]}" font-size="15">Followers / Following</text>'
+        f'<text x="554" y="192" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{fmt_number(user["followers"])} / {fmt_number(user["following"])}</text>',
+        f'<text x="36" y="228" fill="{COLORS["muted"]}" font-size="15">Total stars / Forks</text>'
+        f'<text x="554" y="228" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{fmt_number(total_stars)} / {fmt_number(total_forks)}</text>',
+        f'<text x="36" y="264" fill="{COLORS["muted"]}" font-size="15">Latest active repo</text>',
+        render_text_lines(554, 264, latest_repo_lines, 15, 18, COLORS["text"], weight="700", anchor="end"),
+        f'<text x="36" y="302" fill="{COLORS["muted"]}" font-size="15">Last public push</text>'
+        f'<text x="554" y="302" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{escape(latest_repo_date)}</text>',
     ]
-
-    row_svg = []
-    for idx, (label, value) in enumerate(rows):
-        y = 84 + idx * 34
-        row_svg.append(
-            f'<text x="36" y="{y}" fill="{COLORS["muted"]}" font-size="15">{escape(label)}</text>'
-            f'<text x="554" y="{y}" text-anchor="end" fill="{COLORS["text"]}" font-size="16" font-weight="700">{escape(value)}</text>'
-        )
 
     body = f"""
 <rect width="{width}" height="{height}" rx="24" fill="{COLORS["bg"]}" />
 <rect x="1.5" y="1.5" width="{width - 3}" height="{height - 3}" rx="22.5" stroke="url(#frame)" stroke-width="3" stroke-opacity="0.85" />
 <rect x="22" y="22" width="{width - 44}" height="{height - 44}" rx="18" fill="{COLORS["panel"]}" stroke="{COLORS["border"]}" />
-<text x="36" y="56" fill="{COLORS["title"]}" font-size="28" font-weight="700">GitHub Snapshot</text>
-<text x="36" y="74" fill="{COLORS["muted"]}" font-size="13">Current public profile data</text>
+<text x="36" y="62" fill="{COLORS["title"]}" font-size="24" font-weight="700">GitHub Snapshot</text>
+<text x="36" y="88" fill="{COLORS["muted"]}" font-size="13">Current public profile data</text>
 {''.join(row_svg)}
 """
     return render_svg(width, height, body)
 
 
 def render_languages_card(language_weights: Counter[str], events: list[dict[str, Any]]) -> str:
-    width, height = 590, 300
+    width, height = 590, 320
     top_languages = language_weights.most_common(4) or [("Go", 1.0)]
     max_value = top_languages[0][1]
 
@@ -344,7 +383,7 @@ def render_languages_card(language_weights: Counter[str], events: list[dict[str,
 
     bars = []
     for idx, (language, value) in enumerate(top_languages):
-        y = 88 + idx * 44
+        y = 128 + idx * 38
         color = LANGUAGE_COLORS.get(language, LANGUAGE_COLORS["Other"])
         bar_width = max(70, int((value / max_value) * 280))
         bars.append(
@@ -356,19 +395,17 @@ def render_languages_card(language_weights: Counter[str], events: list[dict[str,
 
     repo_lines = []
     for idx, repo in enumerate(recent_repos):
-        repo_lines.append(
-            f'<text x="36" y="{252 + idx * 16}" fill="{COLORS["muted"]}" font-size="12">{escape(repo)}</text>'
-        )
+        repo_lines.append(truncate_text(repo, 44))
 
     body = f"""
 <rect width="{width}" height="{height}" rx="24" fill="{COLORS["bg"]}" />
 <rect x="1.5" y="1.5" width="{width - 3}" height="{height - 3}" rx="22.5" stroke="url(#frame)" stroke-width="3" stroke-opacity="0.85" />
 <rect x="22" y="22" width="{width - 44}" height="{height - 44}" rx="18" fill="{COLORS["panel"]}" stroke="{COLORS["border"]}" />
-<text x="36" y="56" fill="{COLORS["title"]}" font-size="28" font-weight="700">Recent Contribution Languages</text>
-<text x="36" y="74" fill="{COLORS["muted"]}" font-size="13">Weighted from recent public push and pull request activity</text>
+<text x="36" y="62" fill="{COLORS["title"]}" font-size="24" font-weight="700">Recent Contribution Languages</text>
+<text x="36" y="88" fill="{COLORS["muted"]}" font-size="13">Weighted from recent public push and pull request activity</text>
 {''.join(bars)}
-<text x="36" y="232" fill="{COLORS["muted"]}" font-size="12">Recent public repos</text>
-{''.join(repo_lines)}
+<text x="36" y="250" fill="{COLORS["muted"]}" font-size="12">Recent public repos</text>
+{render_text_lines(36, 274, repo_lines, 12, 18, COLORS["muted"], weight="500")}
 """
     return render_svg(width, height, body)
 
