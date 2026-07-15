@@ -81,15 +81,15 @@
 <table>
   <tr>
     <td colspan="2">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Kalsaria-C&theme=tokyonight" alt="Chintan Kalsaria profile details" />
+      <img width="100%" src="github-profile-overview.svg" alt="Chintan Kalsaria profile overview" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Kalsaria-C&theme=tokyonight" alt="GitHub stats" />
+      <img width="100%" src="github-profile-stats.svg" alt="GitHub stats" />
     </td>
     <td width="50%" valign="top">
-      <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Kalsaria-C&theme=tokyonight" alt="Most commit language" />
+      <img width="100%" src="github-profile-languages.svg" alt="Recent contribution languages" />
     </td>
   </tr>
 </table>
