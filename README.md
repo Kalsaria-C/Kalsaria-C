@@ -13,7 +13,7 @@
 ## 👋 About Me
 
 - 🚀 Backend Engineer with 3+ years of experience building reliable, scalable systems
-- 🏢 Member of Technical Staff at Oracle, working on OCI Log Analytics
+- 🏢 Senior Member of Technical Staff at Oracle, working on OCI Log Analytics
 - 📦 Focused on large-scale log ingestion, telemetry pipelines, and distributed backend systems
 - ⚡ Built an OpenTelemetry logs exporter validated at 80,000 logs/sec on a single CPU
 - 🧠 Strong in debugging complex issues, learning fast, and shipping clean maintainable code
