@@ -102,6 +102,6 @@
 
 ### 👨‍💼 Employer?
 
-[![Download my resume](https://img.shields.io/badge/Download%20my%20resume-0B5FFF?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1zv0LR0IEXwKAZvbVaYci3wGnxAjeCu2c/view?usp=sharing)
+[![Download my resume](https://img.shields.io/badge/Download%20my%20resume-0B5FFF?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1E6_94EwSfqGRV-jbQVIoOJkXE95sSUsG/view?usp=sharing)
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0B5FFF&height=120&section=footer" alt="footer" />
